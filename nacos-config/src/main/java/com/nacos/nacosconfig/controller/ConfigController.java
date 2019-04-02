@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigController {
 
-    @Value("${useLocalCache:false}")
+    @Value(value = "${useLocalCache:false}")
     private boolean useLocalCache;
 
     @RequestMapping("/get")
